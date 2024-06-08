@@ -22,14 +22,13 @@ while True:
     print(resultado)
     print(mcdu)
 
-
-    if resultado[3] == u:
-        print("voce acertou a Unidade")
-    elif resultado[2] == d and resultado[3] == u:
-        print("voce acertou a Dezena")
+    if resultado[0] == m and resultado[1] == c and resultado[2] == d and resultado[3] == u:
+        print("voce acertou a Milhar")
     elif resultado[1] == c and resultado[2] == d and resultado[3] == u:
         print("voce acertou a Centena")
-    elif resultado[0] == m and resultado[1] == c and resultado[2] == d and resultado[3] == u:
-        print("voce acertou a Milhar")
+    elif resultado[2] == d and resultado[3] == u:
+        print("voce acertou a Dezena")
+    elif resultado[3] == u:
+        print("voce acertou a Unidade")
     else:
         print("Tente novamente")
